@@ -4,7 +4,7 @@ from os import environ
 from logging import error as logerror
 
 BASE_URL = environ.get('BASE_URL', "http://0.0.0.0").rstrip("/")
-PORT = environ.get('PORT', None)
+PORT = environ.get('PORT', 8000)
 
 if PORT is not None:
     while 1:
